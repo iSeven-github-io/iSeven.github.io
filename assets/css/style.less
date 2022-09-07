@@ -1,8 +1,13 @@
+@fontPadrao: 'Montserrat', sans-serif;
+@verdeBtn: #5cba3c;
+
 a, p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: @fontPadrao;
 }
+
 .botoesRedoendo{
     border-radius: 10px;
+    margin-top: 10px;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
     color: #8FFDBE !important;
@@ -11,7 +16,6 @@ a, p{
 
 #carouselExampleControls{
     background-color: #3e3e3e !important;
-
 }
 
 .carousel-inner{
@@ -24,29 +28,73 @@ a, p{
     color: white;
 
     h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 4em;
+        font-family: @fontPadrao;
+        font-size: 3rem;
         font-weight: bold;
     }
 
 }
+.btnContato{
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-family: @fontPadrao;
+    font-weight: 500;
+    
+}
+.btnContato:hover{
+    background: @verdeBtn;
+    transition: 0.6s;
+    border-color: @verdeBtn;
 
-@media screen and (max-width: 991px) {
+}
+.whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+#Objetivo{
+    width: 100%;
+    height: 20vw;
+    background-color: #3e3e3e;
+    padding-top: 5%;
     
-    .carousel-inner{
-        height: 80%;
+    hr{
+        height: 3px;
+        width: 80%;
+        
     }
-    .titulo-banner{
-        top: 20%;
-        left: 15%;
-        color: white;
-    
-        h1{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3em;
-            font-weight: bold;
-        }
-    
+}
+.textSectionObj{
+    color: #E1E1E1;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+.notbook{
+    margin-bottom: 10px;
+}
+.banner{
+    height: 50vw;
+}
+.center{
+    display:         flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    #Objetivo{
+        height: 50vh;
+    }
+    .textSectionObj{
+        font-size: 2.5rem;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -60,12 +108,36 @@ a, p{
         color: white;
     
         h1{
-            font-family: 'Montserrat', sans-serif;
+            font-family: @fontPadrao;
             font-size: 2.5em;
             font-weight: bold;
         }
     
     }
+    #Objetivo{
+        width: 100vw;
+        height: 62vh;
+        background-color: #3e3e3e;
+        padding-top: 5%;
+    }
+    .textSectionObj{
+        color: #E1E1E1;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        text-align: center;
+        hr{
+            width: 100% !important;
+        }
+    }
+    .btnContato{
+        border-radius: 30px;
+        font-size: .8rem;
+        font-family: @fontPadrao;
+        font-weight: 500;
+        
+    }
+
 }
 @media screen and (max-width: 575px) {
     
@@ -74,15 +146,49 @@ a, p{
     }
     .titulo-banner{
         top: 15%;
-        left: 10%;
+        left: 20%;
         color: white;
     
         h1{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2em;
+            font-family: @fontPadrao;
+            font-size: 1.2rem;
             font-weight: bold;
         }
+        
     
+    }
+    #Objetivo{
+        width: 100%;
+        background-color: #3e3e3e;
+        padding-top: 5%;
+        height: 55vh;
+    }
+    .textSectionObj{
+        color: #E1E1E1;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+       
+        hr{
+            height: 3px;
+            width: 100% !important;
+            
+        }
+    }
+    .btnContato:hover{
+        background: @verdeBtn;
+        transition: 0.6s;
+        border-color: @verdeBtn;
+        font-size: 0.5rem;
+    
+    }
+    .btnContato{
+        border-radius: 30px;
+        font-size: .4rem;
+        font-family: @fontPadrao;
+        font-weight: 500;
+        
     }
 }
 
