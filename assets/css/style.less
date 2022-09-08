@@ -1,6 +1,20 @@
 @fontPadrao: 'Montserrat', sans-serif;
 @verdeBtn: #5cba3c;
 
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(2, 2, 2);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 248, 246);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(249, 248, 246);  /* creates padding around scroll thumb */
+}
+
 a, p{
     font-family: @fontPadrao;
 }
@@ -38,12 +52,12 @@ a, p{
     border-radius: 30px;
     font-size: 1.5rem;
     font-family: @fontPadrao;
-    font-weight: 500;
+    font-weight: 600;
     
 }
 .btnContato:hover{
     background: @verdeBtn;
-    transition: 0.6s;
+    transition: 1.2s;
     border-color: @verdeBtn;
 
 }
@@ -95,7 +109,12 @@ a, p{
     font-weight: 400;
 }
 .cardSection2{
-    margin: 10px 5px;
+    padding: 20px 0;
+}
+.leiMais{
+    a{
+        padding-left: 25px;
+    }
 }
 @media screen and (min-width: 1400px) {
     #Objetivo{
@@ -152,16 +171,15 @@ a, p{
             }
         }
         .notbook{
-            width: 200px;
+            width: 10rem;
+            margin-bottom: 20px;
         }
     }
    
     .btnContato{
         border-radius: 30px;
         font-size: .8rem;
-        font-family: @fontPadrao;
-        font-weight: 500;
-        
+        font-family: @fontPadrao;        
     }
 
 
@@ -179,10 +197,9 @@ a, p{
     
         h1{
             font-family: @fontPadrao;
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             font-weight: bold;
         }
-        
     
     }
     #Objetivo{
@@ -204,18 +221,16 @@ a, p{
             }
         }
     }
-    .btnContato:hover{
-        background: @verdeBtn;
-        transition: 0.6s;
-        border-color: @verdeBtn;
-        font-size: 0.5rem;
-    
-    }
     .btnContato{
         border-radius: 30px;
-        font-size: .4rem;
+        font-size: .6rem;
         font-family: @fontPadrao;
-        font-weight: 500;
-        
+        font-weight: 600 !important;
     }
+    .notbook{
+        width: 15rem;
+        margin-bottom: 20px;
+    }
+
+
 }
