@@ -316,18 +316,59 @@
                 </div>
             </div>
         </section>
-      
+        <section id="depoimentos">
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="h1 text-center">Depoimentos</h3>
+                    <div class="col-12 col-md-3">
+                        <a type="button" onclick="abrirModal('junior')">
+                            <img src="assets/imagens/Junior2.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a  onclick="abrirModal('felipe')">
+                            <img src="assets/imagens/Felipe2.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a onclick="abrirModal('manu')">
+                            <img src="assets/imagens/Manu2.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="#" onclick="abrirModal('daniel')">
+                            <img src="assets/imagens/Daniel2.png" class="img-fluid" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalIframe" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <iframe  width="300" height="200" src="https://www.youtube.com/watch?v=vftpwQ9UD4E&ab_channel=ISevenPlay" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         <button type="button" src="#" class="btn btn-success whatsapp" data-bs-toggle="tooltip" data-bs-placement="left" title="Fale Conosco!"><i class="fa-brands fa-2x fa-whatsapp"></i></button>
 
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
-    
+    <script src="assets/js/javascript.js"></script>
 </body>
 
 </html>
